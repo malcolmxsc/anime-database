@@ -26,11 +26,7 @@ export const GlobalAnimeProvider = ({ children }) => {
   const baseUrl = 'https://api.jikan.moe/v4'
   const initialState = {
     popularAnime: [],
-    upcomingAnime: [],
-    airingAnime: [],
     pictures: [],
-    isSearch: false,
-    searchResults: [],
     loading: false
   }
 
