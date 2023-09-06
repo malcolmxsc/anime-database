@@ -28,9 +28,9 @@ Jikan API: Unofficial MyAnimeList API for fetching anime data.
 
 https://trello.com/b/N4SgKzBn/project-4
 
-## Deployment to local Host 
+## Deployment to Heroku
 
-http://localhost:3000/
+https://myanimedatabank-60d7edd4ab9e.herokuapp.com/
 
 ## Next Steps
 Add a search function.
