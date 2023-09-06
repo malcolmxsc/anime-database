@@ -4,7 +4,6 @@ This is a simple Anime Database project built using the Jikan API. The Jikan API
 
 ## ScreenShots
 ![Home](https://github.com/malcolmxsc/mern-infrastructure/assets/136124585/a0f2ce00-1542-482c-8f87-3571f1d035ba)
-
 ![desc](https://github.com/malcolmxsc/mern-infrastructure/assets/136124585/6c7e8dcb-400a-4984-ab75-b7c67b6b8a24)
 
 ## Technologies used
