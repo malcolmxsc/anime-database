@@ -7,14 +7,14 @@ import NavBar from '../../components/NavBar/NavBar';
 import { useGlobalAnime } from '../../components/GlobalAnimeProvider';
 import Hot from '../../components/Hot/Hot';
 import AnimeItem from '../../components/AnimeItem';
-import SignUpForm from '../../components/SignUpForm/SignUpForm';
+
 
 
 export default function App() {
   const global = useGlobalAnime()
   console.log(global)
   const [user, setUser] = useState(getUser());
-  const navigate = useNavigate();
+  
 
   return (
     <main className="App">
