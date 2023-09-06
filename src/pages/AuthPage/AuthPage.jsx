@@ -24,7 +24,7 @@ const AuthPageButton = styled.button`
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;

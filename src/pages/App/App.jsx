@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route,} from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
@@ -14,7 +14,7 @@ export default function App() {
   const global = useGlobalAnime()
   console.log(global)
   const [user, setUser] = useState(getUser());
-  
+  const navigate = useNavigate();
 
   return (
     <main className="App">
@@ -24,13 +24,12 @@ export default function App() {
             <Routes>
               <Route path = "/" element={<Hot />} />
               <Route path = "/anime/:id" element ={<AnimeItem />} />
-              <Route path ="/signup" element={<SignUpForm />} /> 
               
             </Routes>
           </>
           :
-          <AuthPage setUser={setUser} />
           
+          <AuthPage setUser={setUser} />
 
           // unblock to show auth page <AuthPage setUser={setUser} />
       }
