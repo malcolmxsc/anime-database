@@ -3,10 +3,8 @@ import React, { useContext, useReducer, useState,createContext } from 'react';
 // actions
 
 const loading = 'loading';
-const search = 'search';
 const get_popular_anime = 'get_popular_anime';
-const get_upcoming_anime = 'get_upcoming_anime';
-const get_airing_anime = 'get_airing_anime';
+
 
 //reducer
 const reducer = (state, action) => {
