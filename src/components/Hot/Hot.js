@@ -11,6 +11,7 @@ function Hot() {
             return popularAnime.map((anime) => {
                 return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
                     <img src={anime.images.jpg.large_image_url} alt =""/>
+                    <h3 class="anime-title">{anime.title}</h3>
                 </Link>
             })
         
