@@ -3,11 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import { useGlobalAnime } from '../../components/GlobalAnimeProvider';
-import { BrowserRouter } from 'react-router-dom';
+import Hot from '../../components/Hot/Hot';
+import AnimeItem from '../../components/AnimeItem';
+
 
 export default function App() {
   const global = useGlobalAnime()
@@ -20,13 +20,19 @@ export default function App() {
           <>
             <NavBar user={user} setUser={setUser} />
             <Routes>
-              {/* Route components in here */}
-              <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              <Route path = "/" element={<Hot />} />
+              <Route path = "/anime/:id" element ={<AnimeItem />} />
+              
             </Routes>
           </>
           :
-          <AuthPage setUser={setUser} />
+          <Routes>
+              <Route path = "/" element={<Hot />} />
+              <Route path = "/anime/:id" element ={<AnimeItem />} />
+              
+            </Routes>
+
+          // unblock to show auth page <AuthPage setUser={setUser} />
       }
     </main>
   );
