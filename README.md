@@ -21,4 +21,7 @@ Jikan API: Unofficial MyAnimeList API for fetching anime data.
 
 https://trello.com/b/N4SgKzBn/project-4
 
+## Deployment to local Host 
+
+http://localhost:3000/
 
