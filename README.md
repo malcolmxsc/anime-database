@@ -28,3 +28,10 @@ https://trello.com/b/N4SgKzBn/project-4
 
 http://localhost:3000/
 
+## Next Steps
+Add a search function.
+
+add implement the Manga API endpoint to allow users to view and search for Manga.
+
+View detailed information about anime characters.
+Add Characters from different Anime to the users own personal favorite characters list.
