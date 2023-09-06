@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './pages/App/App';
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+
+import { GlobalAnimeProvider } from './components/GlobalAnimeProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router><App /></Router>
+    <GlobalAnimeProvider>
+    <Router>
+    
+      <App />
+    
+    </Router>
+    </GlobalAnimeProvider>
   </React.StrictMode>
 );
 
