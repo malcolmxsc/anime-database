@@ -22,7 +22,6 @@ const reducer = (state, action) => {
 const GlobalAnime = createContext()
 
 export const GlobalAnimeProvider = ({ children }) => {
-  const [globalAnimeData, setGlobalAnimeData] = useState(/* Your data here */);
   const baseUrl = 'https://api.jikan.moe/v4'
   const initialState = {
     popularAnime: [],

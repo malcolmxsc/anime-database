@@ -17,6 +17,10 @@ Node
 
 Styled CSS
 
+Javascript
+
+HTML
+
 Jikan API: Unofficial MyAnimeList API for fetching anime data.
 
 
