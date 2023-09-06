@@ -5,10 +5,15 @@ This is a simple Anime Database project built using the Jikan API. The Jikan API
 
 ## Technologies used
 MongoDB/Mongoose
+
 Express
+
 React
+
 Node
+
 Styled CSS
+
 Jikan API: Unofficial MyAnimeList API for fetching anime data.
 
 
