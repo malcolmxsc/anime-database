@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import styled  from 'styled-components'
 
 function AnimeItem() {
@@ -77,7 +77,19 @@ function AnimeItem() {
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen></iframe>}
             </div>
-            <h3 className="characters">Characters</h3>
+            <h3 className="title">Characters</h3>
+            <div className="characters">{characters?.map((character,index) => {
+                const {role} = character
+                const {images,name,mal_id} = character.character
+                return <Link to={`/character/${mal_id}`} key={index}>
+                    <div className="character">
+                        <img src={images?.jpg.image_url} alt=""/>
+                        <h4>{name}</h4>
+                        <p>{role}</p>
+                    </div>
+                </Link>
+
+            })} </div>
         </AnimeItemStyled>
     )
 
@@ -173,7 +185,37 @@ const AnimeItemStyled = styled.div`
             }
         }
         
+        
 
+    }
+
+    .characters {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-gap: 2rem;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 20px;
+        border: 5px solid #e5e7eb;
+        .character{
+            padding: .4rem .6rem;
+            border-radius: 7px;
+            background-color: #EDEDED;
+            transition: all .3s ease-in-out;
+            img{
+                width: 100%;
+            }
+            h4{
+                padding: .5rem 0;
+                color: #efcc00;
+            }
+            p{
+                color: #27AE60;
+            }
+            &:hover{
+                transform: translateY(-7px);
+            }
+        }
     }
 
 
