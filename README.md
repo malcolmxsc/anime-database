@@ -1,4 +1,4 @@
-# Welcome to My AnimeDataBank
+# Welcome to My AnimeDataBank Project 4
 
 This is a simple Anime Database project built using the Jikan API. The Jikan API is an unofficial MyAnimeList (MAL) API that provides access to a vast amount of anime and manga information. In this project, I have utilized the API to create an anime database where users can explore and discover information about their favorite anime series.
 
